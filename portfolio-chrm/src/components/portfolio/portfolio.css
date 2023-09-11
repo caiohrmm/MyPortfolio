@@ -1,0 +1,122 @@
+.portfolio_container {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    padding: 1rem 80px;
+    font-size: var(--h3-font-size);
+}
+
+.portfolio_box {
+    padding: 1rem;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: hsl(var(--hue), var(--sat), 92%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 2rem;
+    transition: 1s;
+}
+
+.portfolio_box:hover {
+    transform: scale(1.05);
+}
+
+.portfolio_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_title h3 {
+    color: var(--title-color);
+}
+
+.portfolio_image img{
+    border-radius: 1rem;
+}
+
+.portfolio_description {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.portfolio i {
+    font-size: var(--icon-font-size);
+    color: var(--title-color-dark);
+}
+
+.portfolio svg {
+    color: var(--title-color-dark);
+}
+
+.portfolio_social a{
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+}
+
+.portfolio_social a i{
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+}
+
+.portfolio_social a i:hover{
+    color: var(--title-color-dark);
+}
+
+.portfolio_social a:hover{
+    color: var(--title-color-dark);
+}
+
+
+/* For large devices */
+@media screen and (max-width: 1550px) {
+    .portfolio_container {
+        grid-template-columns: repeat(1, 700px);
+        gap: 5rem;
+    }
+}
+
+
+/* For large devices */
+@media screen and (max-width: 1369px) {
+    .portfolio_container {
+        grid-template-columns: repeat(1, 520px);
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .portfolio_container {
+        grid-template-columns: repeat(1, 500px);
+        gap: 4rem;
+    }
+}
+    
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .portfolio_container {
+        grid-template-columns: repeat(1, 400px);
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio_container {
+        grid-template-columns: repeat(1, 350px);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 360px) {
+    .portfolio_container {
+        grid-template-columns: repeat(1, 300px);
+        gap: 2rem;
+    }
+
+}
+

@@ -1,0 +1,86 @@
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8rem;
+    padding: 1rem 80px;
+    font-size: var(--h3-font-size);
+}
+
+.skills_box {
+    padding: 1rem;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: hsl(var(--hue), var(--sat), 92%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 2rem;
+    transition: 1s;
+}
+
+.skills_box:hover {
+    transform: scale(1.05);
+}
+
+.skills_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills_title h3 {
+    color: var(--title-color);
+}
+
+.skills_description {
+    font-size: var(--normal-font-size);
+}
+
+.skills_icon i {
+    font-size: var(--icon-font-size);
+    color: var(--title-color-dark);
+}
+
+.skills_icon svg {
+    color: var(--title-color-dark);
+}
+
+/* For large devices */
+@media screen and (max-width: 1450px) {
+    .skills_container {
+        grid-template-columns: repeat(3, 350px);
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .skills_container {
+        grid-template-columns: repeat(2, 320px);
+        gap: 4rem;
+    }
+}
+    
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .skills_container {
+        grid-template-columns: repeat(1, 320px);
+        gap: 3rem;
+    }
+}
+
+
+  
+  @media screen and (max-width: 576px) {
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .skills_container {
+        grid-template-columns: repeat(1, 280px);
+        gap: 2rem;
+    }
+}

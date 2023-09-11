@@ -9,7 +9,7 @@ const Info = () => {
       <div className="about_box">
         <i className="bx bx-briefcase about_icon"></i>
         <h3 className="about_title">Projetos</h3>
-        <span className="about_subtitle">5 projetos completos</span>
+        <span className="about_subtitle">3 projetos completos</span>
       </div>
     </div>
   );

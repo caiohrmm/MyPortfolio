@@ -1,5 +1,5 @@
 import "./about.css";
-import AboutImg from "../../../assets/AboutMe.jpeg";
+import AboutImg from "../../../assets/aboutme.jpeg";
 import CV from "../../../assets/CurriculoCaioHenrique.pdf";
 import Info from "./Info";
 
@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section_title">Sobre mim</h2>
-      <span className="section_subtitle">Introdução</span>
+      <span className="section_subtitle">Confira abaixo alguns fatos sobre meu desenvolvimento profissional !</span>
 
       <div className="about_container container grid">
         <img src={AboutImg} alt="Caio Henrique" className="about_img" />
@@ -17,7 +17,7 @@ const About = () => {
           Minha experiência como desenvolvedor backend me permitiu dominar uma variedade de habilidades essenciais para criar sistemas de alta qualidade e eficiência. Com sólidos conhecimentos em tecnologias como Node.js e Spring Boot, sou capaz de criar APIs robustas e escaláveis que formam a espinha dorsal de aplicativos inovadores.
           </p>
           <a href={CV} download="" className="button button--flex">
-            Download Currículo
+            Baixe meu currículo
             <svg
               className="button_icon"
               xmlns="http://www.w3.org/2000/svg"
